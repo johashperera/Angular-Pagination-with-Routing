@@ -1,27 +1,49 @@
-# AngularPaginationWithRouting
+# Angular Pagination with Routing - Proof of Concept
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+## Introduction
 
-## Development server
+This project serves as a proof of concept to combine pagination with Angular routing. As Angular is a Single Page Application (SPA), the standard approach to pagination can be challenging to implement. However, with this workaround, we can achieve pagination functionality within the context of Angular routing.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Installation](#installation)
+- [Usage](#usage)
+- [Pagination Implementation](#pagination-implementation)
+- [Routing Setup](#routing-setup)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+Follow these steps to set up the project on your local machine:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository from GitHub:
 
-## Running unit tests
+```bash
+$ git clone https://github.com/your-username/your-angular-pagination-project.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Install the dependencies:
 
-## Further help
+```bash
+$ npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+```
+
+## Usage
+
+To run the project, use the Angular CLI command:
+
+```bash
+$ ng serve
+
+
+```
+
+## Pagination Implementation
+
+In this project, we've implemented a custom pagination component that allows us to paginate through data fetched from an API or stored locally. The pagination component handles the logic for dividing the data into pages and displaying the appropriate page based on the user's selection.
