@@ -1,5 +1,21 @@
 <div class="container py-4">
-  <h1>Movie List</h1>
+  <h1>Movies List</h1>
+  <div class="d-flex flex-column align-items-end" [formGroup]="form">
+    <div class="w-25 text-end">
+      <label class="form-label ">Filter by Minimum Rating</label>
+      <select class="form-select" formControlName="ratingFilter" (change)="onSelectionChange($event)">
+        <option value="" selected>All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </div>
+  </div>
   <table class="table mt-2">
     <thead>
       <tr>
